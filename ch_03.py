@@ -1,7 +1,7 @@
 import string
 
 
-with open("ch_3", 'r') as f:
+with open("ch_03", 'r') as f:
     data = f.read().splitlines()
 
 priorities = dict(zip(string.ascii_lowercase + string.ascii_uppercase, range(1, 53)))

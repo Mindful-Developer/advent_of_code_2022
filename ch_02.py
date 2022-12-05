@@ -12,7 +12,7 @@ win = {
     "C": {"X": 0 + 2, "Y": 3 + 3, "Z": 6 + 1},
 }
 
-with open("ch_2", 'r') as f:
+with open("ch_02", 'r') as f:
     games = f.read().splitlines()
 
 p1, p2 = 0, 0

@@ -1,4 +1,4 @@
-with open("ch_4", 'r') as f:
+with open("ch_04", 'r') as f:
     data = f.read().splitlines()
 
 total_contained, total_overlapping = 0, 0

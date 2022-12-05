@@ -1,4 +1,4 @@
-with open("ch_1", "r") as f:
+with open("ch_01", "r") as f:
     elves = f.read().split("\n\n")
 
 elves = sorted(map(lambda x: sum(int(y) for y in x.split("\n")), elves))
