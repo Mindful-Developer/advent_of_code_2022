@@ -22,13 +22,13 @@ for _ in range(len(pos)-1):
     pos.pop()
     fs['/'.join(pos)]['size'] += dir_size
 
+DELETE = 30000000 - (70000000 - fs['/']['size'])
 total_up_to_100000 = 0
-amount_to_delete = 30000000 - (70000000 - fs['/']['size'])
 smallest_dir = None
 for _, v in fs.items():
     if v["size"] <= 100000:
         total_up_to_100000 += v["size"]
-    elif v["size"] >= amount_to_delete:
+    elif v["size"] >= DELETE:
         if smallest_dir is None or v["size"] < smallest_dir["size"]:
             smallest_dir = v
 
